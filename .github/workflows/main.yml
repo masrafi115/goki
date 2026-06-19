@@ -37,7 +37,7 @@ jobs:
           CGO_ENABLED: 0
         run: |
           mkdir -p dist
-          go build -v -ldflags="-s -w" -o dist/myapp-linux-amd64 ./cmd/myapp
+          go build -v -ldflags="-s -w" -o dist/myapp-linux-amd64 .
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
